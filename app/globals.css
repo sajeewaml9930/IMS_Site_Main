@@ -1,0 +1,335 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --rotation-plane-1: 150deg;
+  --rotation-plane-2: 90deg;
+  --rotation-plane-3: 20deg;
+  --rotation-plane-4: -14deg;
+
+  --rotation-measuring-1: -2deg;
+  --rotation-measuring-2: 30deg;
+
+  --rotation-testing-1: -30deg;
+  --rotation-testing-2: 37deg;
+
+  --rotation-analyzing-1: -30deg;
+  --rotation-analyzing-2: 10deg;
+  --rotation-analyzing-3: 42deg;
+
+  --rotation-car-1: -63deg;
+
+  --rotation-monitor-1: 240deg;
+}
+
+.banner-gradient {
+  background: linear-gradient(
+    0deg,
+    rgba(52, 152, 219, 0.5691526610644257) 1%,
+    rgba(255, 255, 255, 0.3394607843137255) 13%
+  );
+}
+
+.marquee-partner {
+  animation: marquee 120s linear infinite;
+}
+
+@keyframes marquee {
+  100% {
+    transform: translateX(-3000px);
+  }
+}
+
+.custom-shadow {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.bg-gradient {
+  background: linear-gradient(transparent, #7c72ff 30%);
+}
+
+.plane-anim-1 {
+  transform-origin: 0;
+  animation: planeanim1 5s infinite;
+}
+
+.plane-anim-2 {
+  transform-origin: 0;
+  animation: planeanim2 5s infinite;
+}
+
+.plane-anim-3 {
+  transform-origin: 0;
+  animation: planeanim3 5s infinite;
+}
+
+.plane-anim-4 {
+  transform-origin: 0;
+  animation: planeanim4 5s infinite;
+}
+
+@keyframes planeanim1 {
+  0%,
+  40% {
+    transform: rotate(var(--rotation-plane-1)) scale(0);
+  }
+  10%,
+  30% {
+    transform: rotate(var(--rotation-plane-1)) scale(1);
+  }
+  40%,
+  100% {
+    transform: rotate(var(--rotation-plane-1)) scale(0);
+  }
+}
+
+@keyframes planeanim2 {
+  0%,
+  40% {
+    transform: rotate(var(--rotation-plane-2)) scale(0);
+  }
+  10%,
+  30% {
+    transform: rotate(var(--rotation-plane-2)) scale(1);
+  }
+  40%,
+  100% {
+    transform: rotate(var(--rotation-plane-2)) scale(0);
+  }
+}
+
+@keyframes planeanim3 {
+  0%,
+  40% {
+    transform: rotate(var(--rotation-plane-3)) scale(0);
+  }
+  10%,
+  30% {
+    transform: rotate(var(--rotation-plane-3)) scale(1);
+  }
+  40%,
+  100% {
+    transform: rotate(var(--rotation-plane-3)) scale(0);
+  }
+}
+
+@keyframes planeanim4 {
+  0%,
+  40% {
+    transform: rotate(var(--rotation-plane-4)) scale(0);
+  }
+  10%,
+  30% {
+    transform: rotate(var(--rotation-plane-4)) scale(1);
+  }
+  40%,
+  100% {
+    transform: rotate(var(--rotation-plane-4)) scale(0);
+  }
+}
+
+.measuring-anim-1 {
+  transform-origin: 0;
+  animation: measuring1 5.1s infinite;
+}
+.measuring-anim-2 {
+  transform-origin: 0;
+  animation: measuring2 5.1s infinite;
+}
+
+@keyframes measuring1 {
+  0%,
+  40% {
+    transform: rotate(var(--rotation-measuring-1)) scale(0);
+  }
+  10%,
+  30% {
+    transform: rotate(var(--rotation-measuring-1)) scale(1);
+  }
+  40%,
+  100% {
+    transform: rotate(var(--rotation-measuring-1)) scale(0);
+  }
+}
+
+@keyframes measuring2 {
+  0%,
+  40% {
+    transform: rotate(var(--rotation-measuring-2)) scale(0);
+  }
+  10%,
+  30% {
+    transform: rotate(var(--rotation-measuring-2)) scale(1);
+  }
+  40%,
+  100% {
+    transform: rotate(var(--rotation-measuring-2)) scale(0);
+  }
+}
+
+.ship-anim-1 {
+  transform-origin: 0;
+  animation: shiptrain1 5.2s infinite;
+}
+
+.train-anim-1 {
+  transform-origin: 0;
+  animation: shiptrain1 5.3s infinite;
+}
+
+@keyframes shiptrain1 {
+  0%,
+  40% {
+    transform: scale(0);
+  }
+  10%,
+  30% {
+    transform: scale(1);
+  }
+  40%,
+  100% {
+    transform: scale(0);
+  }
+}
+
+.testing-anim-1 {
+  transform-origin: 0;
+  animation: testing1 5.1s infinite;
+}
+
+@keyframes testing1 {
+  0%,
+  40% {
+    transform: rotate(var(--rotation-testing-1)) scale(0);
+  }
+  10%,
+  30% {
+    transform: rotate(var(--rotation-testing-1)) scale(1);
+  }
+  40%,
+  100% {
+    transform: rotate(var(--rotation-testing-1)) scale(0);
+  }
+}
+
+.testing-anim-2 {
+  transform-origin: 0;
+  animation: testing2 5.1s infinite;
+}
+
+@keyframes testing2 {
+  0%,
+  40% {
+    transform: rotate(var(--rotation-testing-2)) scale(0);
+  }
+  10%,
+  30% {
+    transform: rotate(var(--rotation-testing-2)) scale(1);
+  }
+  40%,
+  100% {
+    transform: rotate(var(--rotation-testing-2)) scale(0);
+  }
+}
+
+.testing-analyzing-1 {
+  transform-origin: 0;
+  animation: analyzing1 5.2s infinite;
+}
+
+.testing-analyzing-2 {
+  transform-origin: 0;
+  animation: analyzing2 5.2s infinite;
+}
+
+.testing-analyzing-3 {
+  transform-origin: 0;
+  animation: analyzing3 5.2s infinite;
+}
+
+@keyframes analyzing1 {
+  0%,
+  40% {
+    transform: rotate(var(--rotation-analyzing-1)) scale(0);
+  }
+  10%,
+  30% {
+    transform: rotate(var(--rotation-analyzing-1)) scale(1);
+  }
+  40%,
+  100% {
+    transform: rotate(var(--rotation-analyzing-1)) scale(0);
+  }
+}
+
+@keyframes analyzing2 {
+  0%,
+  40% {
+    transform: rotate(var(--rotation-analyzing-2)) scale(0);
+  }
+  10%,
+  30% {
+    transform: rotate(var(--rotation-analyzing-2)) scale(1);
+  }
+  40%,
+  100% {
+    transform: rotate(var(--rotation-analyzing-2)) scale(0);
+  }
+}
+
+@keyframes analyzing3 {
+  0%,
+  40% {
+    transform: rotate(var(--rotation-analyzing-3)) scale(0);
+  }
+  10%,
+  30% {
+    transform: rotate(var(--rotation-analyzing-3)) scale(1);
+  }
+  40%,
+  100% {
+    transform: rotate(var(--rotation-analyzing-3)) scale(0);
+  }
+}
+
+.testing-car-1 {
+  transform-origin: 0;
+  animation: car1 5.3s infinite;
+}
+
+@keyframes car1 {
+  0%,
+  40% {
+    transform: rotate(var(--rotation-car-1)) scale(0);
+  }
+  10%,
+  30% {
+    transform: rotate(var(--rotation-car-1)) scale(1);
+  }
+  40%,
+  100% {
+    transform: rotate(var(--rotation-car-1)) scale(0);
+  }
+}
+
+.testing-monitoring-1 {
+  transform-origin: 0;
+  animation: monitor1 5.4s infinite;
+}
+
+@keyframes monitor1 {
+  0%,
+  40% {
+    transform: rotate(var(--rotation-monitor-1)) scale(0);
+  }
+  10%,
+  30% {
+    transform: rotate(var(--rotation-monitor-1)) scale(1);
+  }
+  40%,
+  100% {
+    transform: rotate(var(--rotation-monitor-1)) scale(0);
+  }
+}
